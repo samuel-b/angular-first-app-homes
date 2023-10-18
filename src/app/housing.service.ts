@@ -5,9 +5,8 @@ import { HousingLocation } from './housinglocation';
   providedIn: 'root',
 })
 export class HousingService {
-  readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
 
-  url = 'http://localhost:3000/locations';
+  url = 'https://api.npoint.io/55bee283c16ac64be5ed';
 
   async getAllHousingLocations(): Promise<HousingLocation[]> {
     const data = await fetch(this.url);
